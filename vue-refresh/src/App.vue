@@ -1,28 +1,25 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
-  </div>
+    <div id="app">
+        main app <br/>
+        <Navbar/>
+        ------<br/>
+        router <br/>
+        <router-view></router-view>
+        <br/>after router<br/>
+        ------
+    </div>
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
-import HelloWorld from './components/HelloWorld.vue';
+  import Vue from 'vue';
+  import Navbar from '@/components/Navbar.vue'
 
-export default Vue.extend({
-  name: 'app',
-  components: {
-    HelloWorld,
-  },
-});
+  export default Vue.extend({
+    name: 'app',
+    components: {Navbar}
+  });
 </script>
 
 <style lang="stylus">
-#app
-  font-family 'Avenir', Helvetica, Arial, sans-serif
-  -webkit-font-smoothing antialiased
-  -moz-osx-font-smoothing grayscale
-  text-align center
-  color #2c3e50
-  margin-top 60px
+
 </style>
