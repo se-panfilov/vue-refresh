@@ -11,13 +11,13 @@
 </template>
 
 <script lang="ts">
-  import Vue from 'vue';
-  import Navbar from '@/components/Navbar.vue'
+import Navbar from '@/components/Navbar.vue'
+import Vue from 'vue'
 
-  export default Vue.extend({
-    name: 'app',
-    components: {Navbar}
-  });
+export default Vue.extend({
+  name: 'app',
+  components: {Navbar}
+})
 </script>
 
 <style lang="stylus">

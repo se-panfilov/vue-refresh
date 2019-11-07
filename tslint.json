@@ -5,13 +5,11 @@
     "tslint-immutable"
   ],
   "rules": {
+    "no-implicit-dependencies": false,
+    "no-submodule-imports": false,
     "interface-name": [
       true,
       "never-prefix"
-    ],
-    "no-implicit-dependencies": [
-      true,
-      "dev"
     ],
     "max-line-length": [
       true,
@@ -126,7 +124,7 @@
       "ignore-template-strings"
     ],
     "no-unused-expression": true,
-    "no-use-before-declare": true,
+//    "no-use-before-declare": true,
     "radix": true,
     "triple-equals": [
       true,

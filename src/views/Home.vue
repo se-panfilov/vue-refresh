@@ -10,31 +10,31 @@
 </template>
 
 <script lang="ts">
-  import ShopItem from '@/components/ShopItem.vue';
-  import { Item } from '@/models/Item';
-  import Vue from 'vue';
+import ShopItem from '@/components/ShopItem.vue'
+import { Item } from '@/models/Item'
+import Vue from 'vue'
 
-  const name = 'home';
-  const components = { ShopItem };
+const name = 'home'
+const components = { ShopItem }
 
-  const items: ReadonlyArray<Item> = [
-    { id: 1, title: 'Super Item 1', price: 20, desc: 'qqqqqq' },
-    { id: 2, title: 'Awesome Item 2', price: 30, desc: 'wwwwww' },
-    { id: 3, title: 'Just another handsome Item 3', price: 40, desc: 'eeeee' }
-  ];
+const items: ReadonlyArray<Item> = [
+  { id: 1, title: 'Super Item 1', price: 20, desc: 'qqqqqq' },
+  { id: 2, title: 'Awesome Item 2', price: 30, desc: 'wwwwww' },
+  { id: 3, title: 'Just another handsome Item 3', price: 40, desc: 'eeeee' }
+]
 
-  const data = () => ({ items });
+const data = () => ({ items })
 
-  const methods = {
-    onPick(id: string) {
-      console.info(id);
-    }
-  };
+const methods = {
+  onPick(id: string) {
+    console.info(id)
+  }
+}
 
-  export default Vue.extend({
-    name,
-    components,
-    data,
-    methods
-  });
+export default Vue.extend({
+  name,
+  components,
+  data,
+  methods
+})
 </script>
