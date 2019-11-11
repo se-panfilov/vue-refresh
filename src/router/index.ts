@@ -1,11 +1,11 @@
 import Vue from 'vue'
-import VueRouter from 'vue-router'
+import VueRouter, { RouteConfig } from 'vue-router'
 import Cart from '../views/Cart.vue'
 import Home from '../views/Home.vue'
 
 Vue.use(VueRouter)
 
-const routes: ReadonlyArray<any> = [
+const routes: ReadonlyArray<RouteConfig> = [
   {
     path: '/',
     name: 'home',
@@ -19,7 +19,7 @@ const routes: ReadonlyArray<any> = [
 ]
 
 const router = new VueRouter({
-  routes
+  routes: [...routes]
 })
 
 export default router
