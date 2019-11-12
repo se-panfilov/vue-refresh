@@ -37,39 +37,40 @@ export default Vue.extend({
         padding 15px
         display flex
         flex-direction column
-        background-color #21786f
+        background-color #d0e2e1
 
         &__top
             align-items: center;
             display: flex;
             flex: 1;
             justify-content: center;
+            background-color #c1becf
 
         &__center
             flex 1
             display flex
             flex-direction row
             justify-content space-between
-            background-color #586280
+            background-color #97a6b3
 
         &__image
             padding 15px
             border 1px solid black
-            background-color #d18eff
+            background-color #ac9dce
 
         &__title
             border 1px solid black
-            background-color #ffbdb5
+            background-color #e6d1cd
 
         &__button
             border 1px solid black
-            background-color #95a2ff
+            background-color #96a5ce;
 
         &__description
             border 1px solid black
-            background-color #488049
+            background-color #809b94
 
         &__price
             border 1px solid black
-            background-color #fff98e
+            background-color #b9c1a7
 </style>
