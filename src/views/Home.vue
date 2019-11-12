@@ -6,6 +6,7 @@
                       :item="item"
                       v-on:pick-item="onPick(item.id)"/>
         </div>
+<!--        <div>{{state}}</div>-->
     </div>
 </template>
 
@@ -31,9 +32,12 @@
     components,
     data() {
       return {
-        items: this.$store.state.items
+        items: this.$store.state.items,
+        // state: this.$store.state
       }
     },
+    // computed() {
+    // },
     methods
   })
 </script>

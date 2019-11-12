@@ -16,17 +16,18 @@ export default new Vuex.Store({
   },
   getters: {
     // getItems: state => {
-    //   return state.items.filter(todo => todo.done)
+    //   return state.items.filter(v => v.done)
     // }
   },
   mutations: {
-    addItem(item: Item): void {
-      state = {...state.items, item }
+    addItem(state, item: Item): void {
+      const items = {...state.items, item};
+      state = {...state, items }
     }
   },
   actions: {
-    addItem(item: Item): void {
-      commit('addItem', item)
+    addItem(context, item: Item): void {
+      context.commit('addItem', item)
     }
   },
   modules: {}
