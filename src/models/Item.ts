@@ -4,3 +4,7 @@ export interface Item {
   title: string
   desc: string
 }
+
+export interface BasketItem extends Item {
+  quantity: number
+}
